@@ -48,8 +48,8 @@ def load_pickle(filename):
                 return pickle.load(f)
     raise FileNotFoundError(f"Could not find {filename} in {paths}")
 
-model      = load_pickle('logistic_model.pkl')
-vectorizer = load_pickle('tfidf_vec.pkl')
+model      = load_pickle('pre_logistic_model.pkl')
+vectorizer = load_pickle('pre_tfidf_vec.pkl')
 stop_words = set(stopwords.words('english'))
 
 # ─── Text preprocessing ───────────────────────────────────────────────────────
